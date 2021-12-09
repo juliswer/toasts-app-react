@@ -6,9 +6,11 @@ export default function App() {
     <div>
       <h1>Hello world</h1>
 
-      <button></button>
+      <button onClick={() => toast('Hello world')}>Hello</button>
 
-      <Toaster />
+      <Toaster 
+        position="bottom-right"
+      />
     </div>
   )
 }
