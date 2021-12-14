@@ -9,7 +9,7 @@ export default function App() {
       <button onClick={() => toast('Hello world')}>Hello</button>
 
       <Toaster 
-        position="bottom-left"
+        position="bottom-right"
       />
     </div>
   )
