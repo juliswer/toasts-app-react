@@ -6,17 +6,17 @@ export default function App() {
     <div>
       <h1>Hello world</h1>
 
-      <button onClick={() => toast.error('Hello world')}>Hello</button>
+      <button onClick={() => toast.success('Hello world', {
+        position: 'top-right',
+        autoClose: 5000,
+        style: {
+          background: '#212121',
+          color: 'white',
+        } 
+        })
+      }>Hello</button>
 
-      <Toaster 
-        position="bottom-right"
-        toastOptions={{
-          style: {
-            background: '#363636',
-            color: '#fff',
-          }
-        }}
-      />
+      <Toaster />
     </div>
   )
 }
