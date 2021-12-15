@@ -6,10 +6,11 @@ export default function App() {
     <div>
       <h1>Hello world</h1>
 
-      <button onClick={() => toast('Hello world')}>Hello</button>
+      <button onClick={() => toast.success('Hello world')}>Hello</button>
 
       <Toaster 
         position="bottom-right"
+        
       />
     </div>
   )
