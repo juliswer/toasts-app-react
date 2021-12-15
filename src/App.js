@@ -14,7 +14,21 @@ export default function App() {
           color: 'white',
         } 
         })
-      }>Hello</button>
+      }
+      >Hello
+      </button>
+
+      <button onClick={() => toast.success('Hello world', {
+        position: 'bottom-left',
+        autoClose: 2000,
+        style: {
+          background: '#000',
+          color: 'white',
+        } 
+        })
+      }
+      >Hello 2
+      </button>
 
       <Toaster />
     </div>
