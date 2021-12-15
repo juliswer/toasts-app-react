@@ -6,11 +6,16 @@ export default function App() {
     <div>
       <h1>Hello world</h1>
 
-      <button onClick={() => toast.success('Hello world')}>Hello</button>
+      <button onClick={() => toast.error('Hello world')}>Hello</button>
 
       <Toaster 
         position="bottom-right"
-        
+        toastOptions={{
+          style: {
+            background: '#363636',
+            color: '#fff',
+          }
+        }}
       />
     </div>
   )
