@@ -7,6 +7,7 @@ export default function App() {
       <h1>Hello world</h1>
 
       <button onClick={() => toast.success('Hello world', {
+        icon: '👏',
         position: 'top-right',
         autoClose: 5000,
         style: {
@@ -18,7 +19,19 @@ export default function App() {
       >Hello
       </button>
 
+      <button onClick={() => toast.loading('Obteniendo datos', {
+        position: 'top-right',
+        autoClose: 5000,
+        style: {
+          background: '#212121',
+          color: 'white',
+        }
+      })}>
+        fetch data
+      </button>
+
       <button onClick={() => toast.success('Hello world', {
+        icon: '🤑',
         position: 'bottom-left',
         autoClose: 2000,
         style: {
